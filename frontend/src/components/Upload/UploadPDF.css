@@ -1,0 +1,108 @@
+.upload-pdf-container {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: var(--bg-color);
+  border-radius: 12px;
+  box-shadow: 0 6px 15px var(--shadow);
+  font-family: var(--font-family);
+  color: var(--text-color);
+  user-select: none;
+  text-align: center;
+}
+
+.upload-pdf-container h2 {
+  margin-bottom: 1.5rem;
+  color: var(--primary-color);
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+
+.file-input {
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1.8px solid var(--border-color);
+  background: var(--input-bg);
+  outline: none;
+  width: 100%;
+  max-width: 100%;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+}
+
+.file-input:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 8px var(--primary-color);
+}
+
+.file-input:disabled {
+  background: #e5e7eb;
+  cursor: not-allowed;
+}
+
+.upload-pdf-container button {
+  background-color: var(--primary-color);
+  border: none;
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 0.75rem 2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.upload-pdf-container button:disabled {
+  background-color: #a5b4fc;
+  cursor: not-allowed;
+}
+
+.upload-pdf-container button:not(:disabled):hover {
+  background-color: var(--primary-hover);
+}
+
+.status-text {
+  margin-top: 1rem;
+  font-size: 1rem;
+  color: var(--text-color);
+  white-space: pre-wrap;
+  min-height: 1.5rem;
+  font-weight: 500;
+}
+.pdf-info {
+  background: var(--card-bg, #f9fafb);
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px var(--shadow);
+  margin-top: 2rem;
+  text-align: left;
+}
+
+.pdf-info h3 {
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.pdf-info p {
+  margin: 0.4rem 0;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Spinner same as AskQuestion */
+.spinner {
+  width: 18px;
+  height: 18px;
+  border: 3px solid white;
+  border-top: 3px solid rgba(255, 255, 255, 0.4);
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}

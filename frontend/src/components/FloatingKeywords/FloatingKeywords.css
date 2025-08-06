@@ -1,0 +1,44 @@
+.floating-keywords-container {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  border-radius: 12px;
+  background: var(--card-bg, #f9fafb);
+  box-shadow: 0 6px 15px var(--shadow);
+  color: var(--text-color);
+  font-family: var(--font-family);
+  text-align: center;
+}
+
+.keywords-cloud {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+}
+
+.floating-keyword {
+  padding: 8px 16px;
+  border-radius: 24px;
+  background: var(--primary-color);
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  animation: floatY 4s ease-in-out infinite alternate;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+.floating-keyword:hover {
+  transform: scale(1.1) translateY(-4px);
+  background: var(--primary-hover, #0056b3);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes floatY {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-10px);
+  }
+}

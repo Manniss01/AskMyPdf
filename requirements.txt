@@ -1,0 +1,10 @@
+flask
+flask-cors
+PyPDF2
+pdfplumber
+transformers
+scikit-learn
+langchain
+langchain-community
+faiss-cpu
+openai
