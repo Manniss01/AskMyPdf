@@ -71,14 +71,14 @@ cd frontend
 npm install
 npm run dev
 ```
-## The frontend will be available at: http://localhost:5173\
+The frontend will be available at: http://localhost:5173\
 
 ## 💡 Future Improvements
 
-🔍 Page-specific Q&A
-🔐 User login & session dashboard
-☁️ Deploy on Hugging Face Spaces or Render
-🎙️ Voice-based interaction
+- 🔍 Page-specific Q&A
+- 🔐 User login & session dashboard
+- ☁️ Deploy on Hugging Face Spaces or Render
+- 🎙️ Voice-based interaction
 
 
 
